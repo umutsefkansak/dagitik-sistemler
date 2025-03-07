@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - spring_boot_app1
+    networks:
+      - app_network
+
+  spring_boot_app1:
+    build:
+      context: ./spring_boot_app1
+      dockerfile: Dockerfile
+    deploy:
+      replicas: 2
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/mydb
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
+      - SERVER_PORT=8080
+    networks:
+      - app_network
+
+  db:
+    image: postgres:latest
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - app_network
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    networks:
+      - app_network
+    ports:
+      - "6379:6379"
+
+networks:
+  app_network:
+
+volumes:
+  pg_data:

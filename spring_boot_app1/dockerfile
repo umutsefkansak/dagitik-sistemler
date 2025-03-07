@@ -1,0 +1,14 @@
+# Base image olarak OpenJDK 17 kullan
+FROM openjdk:17-jdk-slim
+
+# Uygulama çalıştırma dizinini belirle
+WORKDIR /app
+
+# JAR dosyasını konteynıra kopyala
+COPY target/*.jar spring_boot_app1.jar
+
+# Portu aç
+EXPOSE 8080
+
+# Uygulamayı çalıştır
+CMD ["java", "-jar", "spring_boot_app1.jar"]
