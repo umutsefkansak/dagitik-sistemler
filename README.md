@@ -1,3 +1,6 @@
+# Sistemin Detaylı Tanıtım Videosu
+https://drive.google.com/file/d/1YJUYzjBb13v4IuAmn7OzXG1MdPmc8oi_/view?usp=sharing
+
 # Docker Tabanlı Dağıtık Sistem Mimarisi
 
 Bu proje, Docker teknolojisi kullanılarak oluşturulmuş bir dağıtık sistem mimarisini göstermektedir. Mimari, yük dengeleyici olarak Nginx, replikasyonlu Spring Boot uygulama sunucuları, PostgreSQL veritabanı ve Redis cache sunucusundan oluşmaktadır.
