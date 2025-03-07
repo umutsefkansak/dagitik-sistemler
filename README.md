@@ -28,8 +28,8 @@ Bu proje, Docker teknolojisi kullanılarak oluşturulmuş bir dağıtık sistem 
 
 1. Projeyi klonlayın:
    ```bash
-   git clone https://github.com/kullanici/dagitik-sistem-projesi.git
-   cd dagitik-sistem-projesi
+   git clone https://github.com/umutsefkansak/dagitik-sistemler.git
+   cd dagitik-sistemler
    ```
 
 2. Docker Compose ile sistemin tüm bileşenlerini başlatın:
