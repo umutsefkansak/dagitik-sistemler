@@ -4,7 +4,6 @@ Bu proje, Docker teknolojisi kullanılarak oluşturulmuş bir dağıtık sistem 
 
 ## Mimari Bileşenler
 
-![Mimari Diyagram](https://placeholder-image.com)
 
 - **Nginx**: Yük dengeleyici olarak çalışarak gelen istekleri Spring Boot uygulama sunucularına dağıtır
 - **Spring Boot Uygulamaları**: Yüksek erişilebilirlik için 2 replika olarak çalışan uygulama sunucuları
