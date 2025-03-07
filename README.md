@@ -21,8 +21,7 @@ Bu proje, Docker teknolojisi kullanılarak oluşturulmuş bir dağıtık sistem 
 
 ### Gereksinimler
 
-- Docker 20.10 veya üzeri
-- Docker Compose 2.0 veya üzeri
+- Docker
 - Git
 
 ### Kurulum
