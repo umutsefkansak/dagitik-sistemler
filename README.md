@@ -129,13 +129,11 @@ http {
 
 - İki adet Spring Boot uygulaması replikasyon ile yüksek erişilebilirlik sağlamaktadır
 - Her uygulama, PostgreSQL veritabanına ve Redis cache'e bağlanmaktadır
-- Uygulamalar Docker konteynerlerinde çalışmaktadır ve özel Dockerfile ile build edilmektedir
 
 ### Yük Dengeleme
 
 - Nginx, tüm gelen istekleri backend sunuculara dağıtmaktadır
-- `max_fails=3 fail_timeout=30s` parametreleri ile hata tolerans seviyesi ayarlanmıştır
-- Bir sunucu 30 saniye içinde 3 kez başarısız olursa, Nginx bu sunucuyu geçici olarak devre dışı bırakır
+- `max_fails=3 fail_timeout=10s` parametreleri ile hata tolerans seviyesi ayarlanmıştır
 
 ### Veritabanı
 
