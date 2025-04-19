@@ -1,6 +1,6 @@
 # Sistemin Detaylı Tanıtım Videosu
-https://youtu.be/yluYFI-W74o <br/>
-https://drive.google.com/file/d/1YJUYzjBb13v4IuAmn7OzXG1MdPmc8oi_/view?usp=sharing
+Youtube: https://youtu.be/yluYFI-W74o <br/><br/>
+Dirve: https://drive.google.com/file/d/1YJUYzjBb13v4IuAmn7OzXG1MdPmc8oi_/view?usp=sharing
 
 # Docker Tabanlı Dağıtık Sistem Mimarisi
 
